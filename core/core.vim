@@ -59,3 +59,10 @@
 " GUI Config {
     source $evervim_root/core/gui.vim
 " }
+
+"
+" Use post config if available {
+    if filereadable(expand("~/.EverVim.vimrc.after"))
+        source ~/.EverVim.vimrc.after
+    endif
+" }
